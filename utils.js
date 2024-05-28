@@ -1,7 +1,5 @@
 function formDate(date) {
-    return new Date(date).toISOString();
+    return new Date(date).toISOString().slice(0,16);
 }
 
-module.exports = {
-    formDate
-}
+export default formDate;
